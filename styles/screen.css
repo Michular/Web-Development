@@ -1,0 +1,173 @@
+/**** mobilní telefony ***/
+
+/* globální nastavení box modelu */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* tělo stránky */
+
+body {
+  font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+  font-size: 12pt;
+  line-height: 2em;
+  color: rgb(46, 0, 12);
+  background: rgb(255,230,255);
+  padding: 0;
+  margin: 2em;
+}
+
+strong {
+  color: rgb(50,20,30);
+}
+
+hr {
+  display: none;
+}
+
+/* odkazy */
+
+[href] {
+  color: rgb(200,0,152);
+  text-decoration: none;
+  border-bottom: dotted 1px;
+}
+
+[href]:not(.button):hover, [href]#logo, [href] {
+	border-bottom: none;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.gallery img {
+  display: block;
+  margin: calc(10%/4);
+  max-width: 40%
+}
+
+
+#logo img {
+  height: 7em;
+  background-image: url("images/michalxichtround.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#logo img:hover {
+  background-image: url("images/michalxichtround2.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.icons {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.icons li {
+  display: inline-block;
+}
+
+/* hlaviška */
+
+header {
+  background-image: url("images/bg.jpg");
+	background-position: top left;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: scroll;
+	color: rgba(255,255,255,0.5);
+	text-align: center;
+  border-radius: 1em;
+	padding: 2.25em 1em;
+}
+
+/* patiška */
+
+footer {
+  background-image: url("images/bg.jpg");
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  text-align: center;
+  border-radius: 1em;
+  padding: 2em 0;
+}
+
+/*   tablety  */
+
+@media only screen and (min-width:736px) {
+
+  body {
+    font-size: 1.4em;
+  }
+
+}
+
+/* laptopy a malé obrazovky */
+
+@media only screen and (min-width:980px) {
+
+  main {
+    padding: 0 4em 4em 4em;
+  }
+
+  #logo img {
+    height: 12em;
+  }
+
+}
+
+/*   notebooky větší  */
+
+@media only screen and (min-width:1280px) {
+
+  body {
+    font-size: 1.6em;
+  }
+
+}
+
+/* big ass pc monitory */
+
+@media only screen and (min-width:1600px) {
+
+  body {
+    font-size: 1.4em;
+  }
+
+  header {
+    text-align: center;
+    padding: 6em 2em;
+    position: fixed;
+    background-position: top left;
+    top: 5%;
+    right: 2%;
+    width: 33%;
+    height: 90%;
+  }
+
+  header h1 {
+    margin: 1em 0 0 0;
+  }
+
+  body > section, body > nav, main {
+    width: 65%;
+    margin-right: 35%;
+  }
+
+  footer {
+    position: fixed;
+    top: 1em;
+    right: 2.5em;
+    background: transparent;
+  }
+
+}

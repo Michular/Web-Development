@@ -2,45 +2,81 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>My contacts</title>
+    <title>My contacts | Michal Čotek</title>
+    <link rel="icon" href="images/icon.png">
   </head>
 
-  <body bgcolor="#abcdef">
-    <hr size="3" color="#fd0cba">
-    <h1>Contact me now</h1>
-    <form action="mailto:michal.cotek@seznam.cz" method="post" enctype="text/plain">
+  <body>
+    <header>
       <table>
         <tr>
-          <td><label>Your Name:</label></td>
-          <td><input type="text" name="yourName" value=""></td>
-        </tr>
-        <tr>
-          <td><label>Your Email:</label></td>
-          <td><input type="email" name="yourEmail" value=""></td>
+          <td><img src="images/michalxichtround.png" alt="michal profile picture"></td>
+          <td><h1>Michal Čotek</h1>
+            <p><em>Student of chemistry at <strong><a href="https://www.vscht.cz/" tabindex="3">UCT Prague</a></strong></em></p>
+            <p><em>Ex-asshole at <a href="https://uoch.vscht.cz/" tabindex="4">Department of Organic chemistry</a></em></p>
+          </td>
         </tr>
       </table>
-      <label>Your Message:</label><br>
-      <textarea name="yourMessage" rows="8" cols="80"></textarea><br>
-      <label for="">Do you want me to steal you data?</label>
-      <input type="checkbox" name="" value=""><br><br>
-      <input type="submit" name="">
-    </form>
-    <br>
-    <h2>Or whenever you want</h2>
-    <p>✉ <a href="mailto:michal.cotek@seznam.cz?subject=Ale čau">michal.cotek@seznam.cz</a></p>
-    <hr size="3" color="#fd0cba">
-    <h3>Or see my socials</h3>
-    <ul>
-      <li><a href="https://www.facebook.com/michal.cotek/" target="_blank"</a>Facebook</a></li>
-      <li><a href="https://www.instagram.com/michular7/" target="_blank">Instagram</a></li>
-      <li><a href="https://twitter.com/Michular_" target="_blank">Twitter</a></li>
-    </ul>
-    <hr size="3" color="#fd0cba">
-    <h4>You can also visit me at home</h4>
-    <dl>
-      <dt>Second cave from left</dt>
-      <dt>Kobylí 69110</dt>
-      <dt>Czech Republic</dt>
-    </dl>
+    </header>
+     <hr>
+    <section>
+      <h2>WhereU</h2>
+      <p><a href="index.html">Michal Čotek</a> &gt; Contact me</p>
+    </section>
+
+    <main>
+      <article class="">
+        <h2><a id="top">Contacting things</a></h2>
+        <nav>
+          <h3>WhatWhere</h3>
+          <ul>
+            <li><a href="#now">Contact me now</a></li>
+            <li><a href="#mail">Or whenever you want</a></li>
+            <li><a href="#soc">Or see my socials</a></li>
+            <li><a href="#home">You can also visit me at home</a></li>
+          </ul>
+        </nav>
+
+        <h3><a id="now">Contact me now</a></h3>
+        <form action="mailto:michal.cotek@seznam.cz?Zpr%C3%A1va%20z%20webu" method="post" enctype="text/plain">
+          <table>
+            <tr>
+              <td><label>Your Name:</label></td>
+              <td><input type="text" name="your name" value=""></td>
+            </tr>
+            <tr>
+              <td><label>Your Email:</label></td>
+              <td><input type="email" name="your email" value=""></td>
+            </tr>
+          </table>
+          <label>Your Message:</label><br>
+          <textarea name="your message" rows="8" cols="80" placeholder="Hier write!"></textarea><br>
+          <label for="lulw">Do you want me to steal you data?</label>
+          <input type="checkbox" id="lulw" name="Chci sex" value="ano"><br><br>
+          <input type="submit" name="B===">
+        </form>
+        <br>
+        <h2><a id="mail">Or whenever you want</a></h2>
+        <p>✉ <a href="mailto:michal.cotek@seznam.cz?subject=Ale%20čau">michal.cotek@seznam.cz</a></p>
+        <h3><a id="soc">Or see my socials</a></h3>
+        <ul>
+          <li><a href="https://www.facebook.com/michal.cotek/" target="_blank">Facebook</a></li>
+          <li><a href="https://www.instagram.com/michular7/" target="_blank">Instagram</a></li>
+          <li><a href="https://twitter.com/Michular_" target="_blank">Twitter</a></li>
+        </ul>
+        <h4><a id="home">You can also visit me at home</a></h4>
+          <p>Second cave from left</p>
+          <p>Kobylí 69110</p>
+          <p>Czech Republic</p>
+        <a href="#top">back to top</a>
+      </article>
+    </main>
+     <hr>
+    <footer>
+     <ul>
+      <li><a href="contacts.html">Contact me</a></li>
+      <li><a href="about.html">WebTech</a></li>
+     </ul>
+    </footer>
   </body>
 </html>

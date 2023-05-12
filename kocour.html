@@ -1,55 +1,56 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="cs" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>My cat Bart</title>
+    <meta name="description" content="Stránka o kocourovi Michala Čotka">
+    <meta name="author" content="Michal Čotek">
+    <meta name="keywords" content="kočka, mazlíček">
+    <meta name="robots" content="all">
+    <!--<meta http-equiv="refresh" content="30; url=index.html">-->
+    <title>My cat Bart | Michal Čotek</title>
+    <link href="styles/fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css" media="all">
+    <link rel="stylesheet" href="styles/screen.css" media="screen">
+    <link rel="apple-touch-icon" sizes="180x180" href="/styles/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="styles/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="styles/favicon-16x16.png">
+    <link rel="manifest" href="styles/site.webmanifest">
+    <link rel="mask-icon" href="styles/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="styles/favicon.ico">
+    <meta name="msapplication-TileColor" content="#b91d47">
+    <meta name="msapplication-config" content="styles/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
   </head>
 
-  <body bgcolor="#abcdef">
-    <hr size="3" color="#fd0cba">
-    <table cellspacing="20">
-      <tr>
-        <td><img src="images/Bartprofil-modified.png" alt="Čiči" height="300" width="300"> </td>
-        <td>
-          <dl>
-           <dt><h1>Bartoloměj Černokocour</h1></dt>
-           <dt><em>Felis silvestris catus</em></dt>
-           <dt>Kobylí, kdekoliv</dt>
-           <dt>Lovec klíšťat</dt>
-          </dl>
-        </td>
-      </tr>
-    </table>
-    <hr size="3" color="#fd0cba">
-    <table cellspacing="100">
-      <tr>
-        <td>
-          <img src="images/blanket.jpg" alt="Na dece" height="300"><br>
-          <p>Bart v přirozeném prostředí</p>
-        </td>
-        <td>
-          <img src="images/chair.jpg" alt="Na křesle" height="300"><br>
-          <p>Nyní pro změnu spí</p>
-        </td>
-        <td>
-          <img src="images/twisted.jpg" alt="Normální" height="300"><br>
-          <p>Dejme tomu, že je to zdravé</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <img src="images/floorflat.jpg" alt="Na zemi" height="350"><br>
-          <p>Na procházce po domě</p>
-        </td>
-        <td>
-          <img src="images/stairs.jpg" alt="U schodů" height="350"><br>
-          <p>Občas si plete stěnu s podlahou</p>
-        </td>
-        <td>
-          <img src="images/window.jpg" alt="Venku" height="350"><br>
-          <p>Tady dovádí po venku</p>
-        </td>
-      </tr>
-    </table>
+  <body>
+    <header>
+      <a href="index.html" id="logo"><img src="images/Bartprofil-modified.png" alt="Bart profile picture"></a>
+      <h1>Bartoloměj Černokocour</h1>
+      <p><em>Felis silvestris catus</em></p>
+      <p>Kobylí, kdekoliv</p>
+    </header>
+     <hr>
+    <main>
+      <article class="">
+        <h2><a id="top">Galerie</a></h2>
+        <p>Bart je černý kocour venkovského původu. Rád spí a jí. V této galerii je popsán jeho život.</p>
+        <p class="gallery">
+          <img src="images/blanket.jpg" alt="Na dece" title="Bart v přirozeném prostředí">
+          <img src="images/chair.jpg" alt="Na křesle" title="Nyní pro změnu spí">
+          <img src="images/twisted.jpg" alt="Normální" title="Dejme tomu, že je to zdravé">
+          <img src="images/floorflat.jpg" alt="Na zemi" title="Na procházce po domě">
+          <img src="images/stairs.jpg" alt="U schodů" title="Občas si plete stěnu s podlahou">
+          <img src="images/window.jpg" alt="Venku" title="Tady dovádí po venku">
+        </p>
+        <a href="#top">back to top</a>
+      </article>
+    </main>
+     <hr>
+    <footer>
+     <ul>
+      <li><a href="contacts.html">Contact me</a></li>
+      <li><a href="about.html">WebTech</a></li>
+     </ul>
+    </footer>
   </body>
 </html>
